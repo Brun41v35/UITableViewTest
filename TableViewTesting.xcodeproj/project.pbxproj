@@ -12,7 +12,6 @@
 		7E83B8972B94ABDD00D5B21C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E83B8952B94ABDD00D5B21C /* Main.storyboard */; };
 		7E83B8992B94ABDE00D5B21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E83B8982B94ABDE00D5B21C /* Assets.xcassets */; };
 		7E83B89C2B94ABDE00D5B21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E83B89A2B94ABDE00D5B21C /* LaunchScreen.storyboard */; };
-		7E83B8A72B94ABDE00D5B21C /* TableViewTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83B8A62B94ABDE00D5B21C /* TableViewTestingTests.swift */; };
 		7E83B8C32B94AE8F00D5B21C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83B8C22B94AE8F00D5B21C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		7E83B89B2B94ABDE00D5B21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E83B89D2B94ABDE00D5B21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E83B8A22B94ABDE00D5B21C /* TableViewTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E83B8A62B94ABDE00D5B21C /* TableViewTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTestingTests.swift; sourceTree = "<group>"; };
 		7E83B8C22B94AE8F00D5B21C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +86,6 @@
 		7E83B8A52B94ABDE00D5B21C /* TableViewTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				7E83B8A62B94ABDE00D5B21C /* TableViewTestingTests.swift */,
 			);
 			path = TableViewTestingTests;
 			sourceTree = "<group>";
@@ -232,7 +229,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E83B8A72B94ABDE00D5B21C /* TableViewTestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
