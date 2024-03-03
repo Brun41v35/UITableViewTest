@@ -28,8 +28,22 @@ final class TableViewControllerTests: XCTestCase {
     }
 
     func test_numberOfRows_shouldBe3() {
-        XCTAssertEqual(sut.tableView.dataSource?.tableView(sut.tableView,
-                                                           numberOfRowsInSection: 0), 3)
+        XCTAssertEqual(numberOfRows(in: sut.tableView), 3)
+    }
+
+    func test_cellForRowAt_withRow0_shouldCellLabelToOne() {
+        let cell = cellForRowAt(in: sut.tableView)
+        XCTAssertEqual(cell?.textLabel?.text, "One")
+    }
+
+    func test_cellForRowAt_withRow1_shouldCellLabelToTwo() {
+        let cell = cellForRowAt(in: sut.tableView, row: 1)
+        XCTAssertEqual(cell?.textLabel?.text, "Two")
+    }
+
+    func test_cellForRowAt_withRow2_shouldCellLabelToThree() {
+        let cell = cellForRowAt(in: sut.tableView, row: 2)
+        XCTAssertEqual(cell?.textLabel?.text, "Three")
     }
 
     // MARK: - Helpers
@@ -40,5 +54,17 @@ final class TableViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
 
         return sut
+    }
+
+    private func numberOfRows(in tableView: UITableView,
+                              section: Int = 0) -> Int? {
+        
+        return tableView.dataSource?.tableView(tableView,
+                                               numberOfRowsInSection: section)
+    }
+
+    private func cellForRowAt(in tableView: UITableView, row: Int = 0) -> UITableViewCell? {
+        return tableView.dataSource?.tableView(tableView, cellForRowAt: IndexPath(row: row,
+                                                                                  section: 0))
     }
 }
