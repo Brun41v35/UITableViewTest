@@ -15,8 +15,11 @@ final class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
 
-    // MARK: - Table view data source
+// MARK: - Extension
+
+extension TableViewController {
 
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
