@@ -4,11 +4,32 @@ import XCTest
 
 final class TableViewControllerTests: XCTestCase {
 
-    func test_tableViewDelegates_shouldBeConnected() {
-        let sut = loadStoryboard()
+    // MARK: - Private Property
 
+    private var sut: TableViewController!
+
+    // MARK: - lifeCycle
+
+    override func setUp() {
+        super.setUp()
+        sut = loadStoryboard()
+    }
+
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
+    }
+
+    // MARK: - Tests
+
+    func test_tableViewDelegates_shouldBeConnected() {
         XCTAssertNotNil(sut.tableView.dataSource, "dataSource")
         XCTAssertNotNil(sut.tableView.delegate, "delegate")
+    }
+
+    func test_numberOfRows_shouldBe3() {
+        XCTAssertEqual(sut.tableView.dataSource?.tableView(sut.tableView,
+                                                           numberOfRowsInSection: 0), 3)
     }
 
     // MARK: - Helpers
