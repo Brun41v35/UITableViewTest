@@ -46,6 +46,21 @@ final class TableViewControllerTests: XCTestCase {
         XCTAssertEqual(cell?.textLabel?.text, "Three")
     }
 
+    func test_didSelectRowAt_withRow0() {
+        sut.tableView.delegate?.tableView?(sut.tableView,
+                                           didSelectRowAt: IndexPath(row: 0, section: 0))
+    }
+    
+    func test_didSelectRowAt_withRow1() {
+        sut.tableView.delegate?.tableView?(sut.tableView,
+                                           didSelectRowAt: IndexPath(row: 1, section: 0))
+    }
+    
+    func test_didSelectRowAt_withRow2() {
+        sut.tableView.delegate?.tableView?(sut.tableView,
+                                           didSelectRowAt: IndexPath(row: 2, section: 0))
+    }
+
     // MARK: - Helpers
 
     private func loadStoryboard() -> TableViewController {
