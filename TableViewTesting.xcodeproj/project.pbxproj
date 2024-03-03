@@ -13,6 +13,7 @@
 		7E83B8992B94ABDE00D5B21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E83B8982B94ABDE00D5B21C /* Assets.xcassets */; };
 		7E83B89C2B94ABDE00D5B21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E83B89A2B94ABDE00D5B21C /* LaunchScreen.storyboard */; };
 		7E83B8C32B94AE8F00D5B21C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83B8C22B94AE8F00D5B21C /* TableViewController.swift */; };
+		7EEDA6452B94B456001CA337 /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEDA6442B94B456001CA337 /* TableViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		7E83B89D2B94ABDE00D5B21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E83B8A22B94ABDE00D5B21C /* TableViewTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E83B8C22B94AE8F00D5B21C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7EEDA6442B94B456001CA337 /* TableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		7E83B8A52B94ABDE00D5B21C /* TableViewTestingTests */ = {
 			isa = PBXGroup;
 			children = (
+				7EEDA6432B94B43D001CA337 /* Scenes */,
 			);
 			path = TableViewTestingTests;
 			sourceTree = "<group>";
@@ -114,6 +117,14 @@
 			isa = PBXGroup;
 			children = (
 				7E83B8C22B94AE8F00D5B21C /* TableViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7EEDA6432B94B43D001CA337 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7EEDA6442B94B456001CA337 /* TableViewControllerTests.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 					};
 					7E83B8A12B94ABDE00D5B21C = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = 7E83B88B2B94ABDD00D5B21C;
 					};
 				};
@@ -229,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEDA6452B94B456001CA337 /* TableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +455,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
@@ -451,6 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = brunosilva.TableViewTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewTesting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TableViewTesting";
@@ -462,6 +477,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXX4852TTD;
