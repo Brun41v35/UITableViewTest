@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E548B392B995D5900D9B74D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7E83B88C2B94ABDD00D5B21C /* TableViewTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E83B88F2B94ABDD00D5B21C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E83B8912B94ABDD00D5B21C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		7E83B88E2B94ABDD00D5B21C /* TableViewTesting */ = {
 			isa = PBXGroup;
 			children = (
+				7E548B392B995D5900D9B74D /* README.md */,
 				7E83B8C12B94AD1000D5B21C /* Scenes */,
 				7E83B8C02B94AC9A00D5B21C /* AppDelegate */,
 				7E83B8BF2B94AC8900D5B21C /* Resources */,
