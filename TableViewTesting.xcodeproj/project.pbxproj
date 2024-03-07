@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E548B3A2B99604E00D9B74D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E548B392B995D5900D9B74D /* README.md */; };
 		7E83B8902B94ABDD00D5B21C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83B88F2B94ABDD00D5B21C /* AppDelegate.swift */; };
 		7E83B8922B94ABDD00D5B21C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83B8912B94ABDD00D5B21C /* SceneDelegate.swift */; };
 		7E83B8972B94ABDD00D5B21C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E83B8952B94ABDD00D5B21C /* Main.storyboard */; };
@@ -215,6 +216,7 @@
 			files = (
 				7E83B89C2B94ABDE00D5B21C /* LaunchScreen.storyboard in Resources */,
 				7E83B8992B94ABDE00D5B21C /* Assets.xcassets in Resources */,
+				7E548B3A2B99604E00D9B74D /* README.md in Resources */,
 				7E83B8972B94ABDD00D5B21C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
