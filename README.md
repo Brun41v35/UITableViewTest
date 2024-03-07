@@ -2,4 +2,4 @@
 
 ### Hello!
 
-I'm using this repository to study how to unit test a `UITableView`.
+I created this repository to study how to test a `UITableView`.
